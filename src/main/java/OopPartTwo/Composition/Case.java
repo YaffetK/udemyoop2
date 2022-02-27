@@ -1,4 +1,4 @@
-package OopPartTwo;
+package OopPartTwo.Composition;
 
 
 public class Case {

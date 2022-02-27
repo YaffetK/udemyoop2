@@ -1,4 +1,4 @@
-package OopPartTwo;
+package OopPartTwo.Composition;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,12 +8,9 @@ public class Main {
 
         Monitor theMonitor= new Monitor("32 inch","Acer", 32,new Resolution(3200,1800));
 
-        Motherboard theMotherBoard= new Motherboard("BJ-200","Asus",8,12,"v2.15");
+        MotherBoard theMotherBoard= new MotherBoard("BJ-200","Asus",8,12,"v2.15");
 
         PC thePC=new PC(theCase,theMonitor,theMotherBoard);
-
-        thePC.getMonitor().drawPixelAt(1500,1200,"red");
-        thePC.getMotherboard().loadProgram("windows 1.0");
-        thePC.getTheCase().pressPowerButton();
+        thePC.powerUp();
     }
 }

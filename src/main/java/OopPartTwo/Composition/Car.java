@@ -1,6 +1,6 @@
-package OopPartTwo;
+package OopPartTwo.Composition;
 
-public class Car extends Vehicle{
+public class Car extends Vehicle {
     private int doors;
     private int engineCapacity;
 
